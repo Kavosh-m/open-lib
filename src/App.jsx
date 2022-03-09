@@ -18,7 +18,7 @@ const App = () => {
     setLoading(true);
     try {
       const { data } = await axios.get(
-        `http://openlibrary.org/search.json?title=${keyword}`
+        `https://openlibrary.org/search.json?title=${keyword}`
       );
       // console.log(data.docs);
       setBooks(data.docs);
